@@ -177,8 +177,9 @@ if __name__ == "__main__":
     vae_encoder = vae.encoder  # Load the pretrained VAE encoder
 
     print("Saving other required variables for training Dall-e model")
-    save_dir = '/Users/varshasrinivas/Desktop/SJSU/Fall 2023/Dalle/text-to-image_generation'
-
+    # save_dir = '/Users/varshasrinivas/Desktop/SJSU/Fall 2023/Dalle/text-to-image_generation'
+    save_dir='./Saved_Parameters'
+    
     # Saving train and test dataloaders
     with open(os.path.join(save_dir, 'train_dataloader.pkl'), 'wb') as f:
         pickle.dump(train_dataloader, f)

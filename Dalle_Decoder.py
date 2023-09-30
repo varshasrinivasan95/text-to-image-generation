@@ -53,8 +53,8 @@ class CustomDataset(Dataset):
 #================================================================
 # Section 2 : Loading the saved values
 #=======================================================================
-save_dir = '/Users/varshasrinivas/Desktop/SJSU/Fall 2023/Dalle/text-to-image_generation'
-
+# save_dir = '/Users/varshasrinivas/Desktop/SJSU/Fall 2023/Dalle/text-to-image_generation'
+save_dir='./Saved_Parameters'
 print("Loading the saved train and test image dataloaders")
 with open(os.path.join(save_dir, 'train_dataloader.pkl'), 'rb') as f:
     train_dataloader = pickle.load(f)
